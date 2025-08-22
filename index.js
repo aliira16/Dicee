@@ -15,8 +15,8 @@ let btn = document.querySelector("button")
 function getResult() {
     let numberOne = Math.floor(Math.random() * 6) + 1
     let numberTwo = Math.floor(Math.random() * 6) + 1
-    imgOne.setAttribute("src", `/DOM Challenge Starting Files/images/dice${numberOne}.png`)
-    imgTwo.setAttribute("src", `/DOM Challenge Starting Files/images/dice${numberTwo}.png`)
+    imgOne.setAttribute("src", `DOM Challenge Starting Files/images/dice${numberOne}.png`)
+    imgTwo.setAttribute("src", `DOM Challenge Starting Files/images/dice${numberTwo}.png`)
     if (numberOne > numberTwo) {
         h.textContent = "player 1 win 🎉"
     } else if (numberTwo > numberOne) {
@@ -31,5 +31,6 @@ function getResult() {
 btn.onclick = function () {
     getResult()
 }
+
 
 
